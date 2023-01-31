@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+#root{
+  background-color: blue;
+  height: 100vh;
+  width: 100%;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.title {
+  position: relative;
+  bottom: 10%;
+  font-size: 25px;
+  color: white;
+ 
+  font-family: 'Cabin', sans-serif;
+}
+
+
+.todo-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+position: relative;
+top: 10%;
+  height: 80vh;
+  padding: 20px;
+
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  animation: pulse 2s infinite;
+  background-color: red;
+}
+
+button[type="submit"] {
+  width: 20%;
+  padding: 10px;
+  background-color: #00b0ff;
+  color: rgb(35, 8, 8);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #00b0ff;
+  border: 1px solid #00b0ff;
+}
+
+ul {
+  list-style: none;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(230, 221, 221);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease-out;
+  font-family: 'Cabin', sans-serif;
+  font-size: 23px;
+}
+
+button[type="button"] {
+  background-color: #00b0ff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+button[type="button"]:hover {
+  background-color: #fff;
+  color: #00b0ff;
+  border: 1px solid #00b0ff;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
